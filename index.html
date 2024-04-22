@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dev.park</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="site__container">
+            <header class="site__header">
+                <div class="nav">
+                    <h1 class="logo">
+                        <a href="#"><span>dev.</span>park</a></h1>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a href="#">about me</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#">projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="contents">
+                <div 
+                    class="content"
+                    id="summaryContent1"
+                    onclick="showContents('summaryContent1')">
+                    <h3>콘텐츠1</h3>
+                    <p>첫번째 콘텐츠입니다.</p>
+                </div>
+                <img class="icon" id="icon1" src="icon-arrow-down.png" style="display: none;"/>
+                <div
+                    class="content"
+                    id="content1"
+                    style="display: none;">
+                    <p>콘텐츠 내용</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
