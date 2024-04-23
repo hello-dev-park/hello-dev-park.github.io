@@ -20,10 +20,10 @@ html, body {
 .logo {
     font-weight: bold;
     font-size: 50px;
+}
 
-    &span {
-        color: #4f46e5;
-    }
+span {
+    color: #396CE8;
 }
 
 .nav .nav-menu {
