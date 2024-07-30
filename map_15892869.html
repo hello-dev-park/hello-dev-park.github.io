@@ -1,0 +1,37 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <title>마커 표시</title>
+                    <style type="text/css">
+                        html, body {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    </style>
+                </head>
+                <body>
+                <div id="map" style="width:100%;height:100%;"></div>
+
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0cddef66b8dcec67bbe261a88013f44d&autoload=false"></script>
+                <script>
+                var mapContainer = document.getElementById('map'), 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.562409368174585, 126.97891384153051),
+                        level: 3
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                var markerPosition  = new kakao.maps.LatLng(37.562409368174585, 126.97891384153051); 
+
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                marker.setMap(map);
+ 
+                </script>
+                </body>
+                </html>
